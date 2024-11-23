@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-curriculum-principal {
+    padding: 2vh 0 2vh 0;
+
+    .fila-curriculum-principal {
+        width: 34vw;
+        margin-left: 33vw;
+        box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2),
+            -2px -2px 6px 2px rgba(0, 0, 0, 0.2);
+
+        .columna-curriculum-principal-foto {
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+
+            .principal-foto {
+                width: 100%;
+                height: 18vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .foto {
+                    width: 12vh;
+                    height: 12vh;
+                    border-radius: 50%;
+                    background-color: rgba(255, 241, 250, 0.3);
+                    background-image: url('./../../../assets/imagenes/profile_user.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border: 2px solid rgba(255, 255, 255, 1);
+                    z-index: 1;
+                }
+
+                .foto-gradiente {
+                    width: 100%;
+                    height: 9vh;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: linear-gradient(90deg, rgba(29, 161, 161, 0.3)50%, rgba(185, 246, 255, 0.2)70%, rgba(22, 208, 233, 0.2)80%);
+                }
+            }
+
+            .principal-foto-nombre {
+                width: 100%;
+                height: 7vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    text-align: center;
+                    letter-spacing: -2.8px;
+                    line-height: 1.2;
+                    color: rgba(0, 83, 121, 1);
+                }
+
+            }
+
+            .principal-foto-titulo {
+                width: 100%;
+                height: 5vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 18px;
+                    letter-spacing: 0.5px;
+                    line-height: 1;
+                }
+            }
+        }
+
+        .columna-curriculum-principal-contacto-presentacion {
+            height: 30vh;
+
+            .principal-contacto {
+                width: 90%;
+                height: 10vh;
+                margin-left: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;                                   
+                border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                .contacto-left {
+                    width: 50%;
+                    height: 7.5vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                    .contacto-left-fila {
+                        width: 100%;
+                        height: 2.5vh;
+                        display: flex;
+                        flex-direction: row;
+
+                        .contacto-left-icono {
+                            width: 15%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .icono-contacto {
+                                color: rgba(0, 83, 121, 1);
+                                font-size: 12px;
+                                text-align: justify;
+                                line-height: 1;
+                            }
+
+                            .icono-contacto-linkedin {
+                                color: rgba(0, 83, 121, 1);
+                                font-size: 12px;
+                                text-align: justify;
+                                line-height: 1;
+                            }
+                        }
+
+                        .contacto-left-texto {
+                            width: 85%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            p,
+                            a {
+                                font-size: 12px;
+                                text-align: center;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+
+                .contacto-right {
+                    width: 50%;
+                    height: 7.5vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                    .contacto-right-fila {
+                        width: 100%;
+                        height: 2.5vh;
+                        display: flex;
+                        flex-direction: row;
+
+                        .contacto-right-icono {
+                            width: 15%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            .icono-contacto {
+                                color: rgba(0, 83, 121, 1);
+                                font-size: 18px;
+                                text-align: justify;
+                                line-height: 1;
+                            }
+                        }
+
+                        .contacto-right-texto {
+                            width: 85%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+
+                            p,
+                            a {
+                                font-size: 13px;
+                                text-align: center;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .principal-presentacion {
+                width: 94%;
+                height: 20vh;
+                margin-left: 3%;
+                padding: 2vh 1vw 0 1vw;
+
+                p {
+                    font-size: 12px;
+                    text-align: justify;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .columna-curriculum-principal-skills {
+            height: 66vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1vh;
+
+            .principal-hard-skills {
+                width: 100%;
+                height: 36vh;
+                display: flex;
+                flex-direction: column;
+
+                .hard-skills-titulo {
+                    width: 90%;
+                    height: 4vh;
+                    margin-left: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                    h2 {
+                        font-size: 18px;
+                        color: rgb(70, 70, 70);
+                    }
+                }
+
+                .hard-skills-contenido {
+                    width: 100%;
+                    height: 32vh;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 1vh;
+
+                    .skills-contenido-fila {
+                        width: 100%;
+                        height: 2.5vh;
+                        display: flex;
+                        flex-direction: row;
+
+                        .skills-fila-icono {
+                            width: 30%;
+                            height: 2.5vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .habilidad-ico {
+                                color: rgba(0, 83, 121, 1);
+                                font-size: 20px;
+                                text-align: justify;
+                                line-height: 1;
+                            }
+
+                            .icono-ionic {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('./../../../assets/imagenes/ionic.png');
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+
+                            .icono-thymeleaf {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('./../../../assets/imagenes/thymeleaf.png');
+                                background-size: 29%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+
+                            .icono-java {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('./../../../assets/imagenes/java.png');
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+
+                            .icono-springboot {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('./../../../assets/imagenes/springboot.png');
+                                background-size: 30%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+
+                            .icono-firebase {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('./../../../assets/imagenes/firebase.png');
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+
+                        }
+
+                        .skills-fila-texto {
+                            width: 70%;
+                            height: 2.5vh;
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                font-size: 12px;
+                                text-align: justify;
+                                line-height: 1.6;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .principal-soft-skills {
+                width: 100%;
+                height: 29vh;
+                display: flex;
+                flex-direction: column;
+
+                .soft-skills-titulo {
+                    width: 90%;
+                    height: 4vh;
+                    margin-left: 5%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                    h2 {
+                        
+                        font-size: 18px;
+                        color: rgb(70, 70, 70);
+                    }
+                }
+
+                .soft-skills-texto {
+                    width: 100%;
+                    height: 23vh;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2vh;
+                    padding: 0 2vw 0 2vw;
+
+                    .skills-texto {
+                        width: 100%;
+                        height: 2.5vh;
+                        ul li{
+                            font-size: 12px;
+                            text-align: justify;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+            }
+        }
+
+        .columna-curriculum-principal-proyectos-formacion {
+            height: 66vh;
+            display: flex;
+            flex-direction: column;
+
+            .principal-proyectos {
+                width: 94%;
+                height: 46vh;
+                margin-left: 3%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 0.5vw 0 0.5vw;
+
+                .proyectos-titulo {
+                    width: 100%;
+                    height: 4vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin: 1vh 0 1vh 0;                    
+                    border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                    h2 {
+                        font-size: 18px;
+                        color: rgb(70, 70, 70);
+                    }
+                }
+
+                .acordeon-proyectos {
+                    height: 40vh;
+
+                    .item-acordeon {
+                        border: none;
+
+                        .accordion-header {
+                            height: 3vh;
+
+                            .accordion-button {
+                                height: 3vh;
+                                font-size: 12px;
+                                font-weight: bold;
+                                text-align: center;
+                                justify-content: center;
+                                border-bottom: 0.5px solid rgba(125,125,125,0.3);
+                            }
+                            .accordion-button:focus {
+                                box-shadow: none;
+                                background-color: transparent;
+                            }
+                            .accordion-button:not(.collapsed) {
+                                background-color: transparent; 
+                            }
+                        }
+
+                        .cuerpo-acordeon {
+                            width: 100%;
+                            height: 31vh;
+
+                            .proyectos-seccion {
+                                width: 100%;
+                                height: 31vh;
+
+                                .proyectos-seccion-texto {
+                                    width: 100%;
+                                    height: 20vh;
+                                    padding: 1vh;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    p {
+                                        font-size: 12px;
+                                        text-align: justify;
+                                        line-height: 1.6;
+                                    }
+                                }
+
+                                .proyectos-seccion-link {
+                                    width: 100%;
+                                    height: 3vh;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    padding-left: 1vh;
+
+
+                                    a {
+                                        font-size: 12px;
+                                        line-height: 1;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+
+                }
+
+
+            }
+
+            .principal-formacion {
+                width: 94%;
+                height: 10vh;
+                margin-left: 3%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 0.5vw 0 0.5vw;
+
+                .formacion-titulo {
+                    width: 100%;
+                    height: 4vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                    h2 {
+                        font-size: 18px;
+                        color: rgb(70, 70, 70);
+                        
+                    }
+                }
+
+                .formacion-datos {
+                    width: 100%;
+                    height: 4vh;
+                    padding: 1vh;
+
+                    .formacion-datos-carrera {
+                        width: 100%;
+                        height: 5vh;
+
+                        h3 {
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            text-align: justify;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+            }
+
+            .principal-idiomas {
+                width: 94%;
+                height: 10vh;
+                margin-left: 3%;
+                display: flex;
+                flex-direction: column;
+                padding: 0 1vw 0 1vw;
+                
+
+                .idiomas-titulo {
+                    width: 100%;
+                    height: 4vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    border-bottom: 0.5px solid rgba(125,125,125,0.7);
+
+                    h2 {
+                        font-size: 18px;
+                        color: rgb(70, 70, 70);
+                    }
+                }
+
+                .idiomas-datos {
+                    width: 100%;
+                    height: 6vh;
+                    display: flex;
+                    flex-direction: row;
+
+                    .idiomas-datos-izquierda {
+                        width: 20%;
+                        height: 6vh;
+
+                        p {
+                            font-size: 12px;
+                            text-align: justify;
+                            line-height: 1.6;
+                        }
+                    }
+
+                    .idiomas-datos-derecha {
+                        width: 80%;
+                        height: 6vh;
+
+                        p {
+                            font-size: 12px;
+                            text-align: justify;
+                            line-height: 1.6;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+//DISEÑO RESPONSIVO 
+//
+
+@media (max-width:768px) {
+
+    .contenedor-curriculum-principal {
+        padding: 0vh 0 2vh 0;
+
+        .fila-curriculum-principal {
+            width: 100vw;
+            margin-left: 0vw;
+
+            .columna-curriculum-principal-foto {
+                height: 40vh;
+
+                .principal-foto {
+                    height: 24vh;
+
+                    .foto {
+                        width: 18vh;
+                        height: 18vh;
+                    }
+
+                    .foto-gradiente {
+                        height: 12vh;
+                    }
+                }
+
+                .principal-foto-nombre {
+                    height: 10vh;
+
+                    h2 {
+                        font-size: 42px;
+                        letter-spacing: -3px;
+                    }
+
+                }
+
+                .principal-foto-titulo {
+                    height: 6vh;
+
+                    p {
+                        font-size: 32px;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+
+            .columna-curriculum-principal-contacto-presentacion {
+                height: 40vh;
+
+                .principal-contacto {
+                    height: 14vh;
+                    align-items: center;
+
+                    .contacto-left {
+                        width: 50%;
+                        height: 10vh;
+                        justify-content: center;
+
+                        .contacto-left-fila {
+                            height: 3vh;
+
+                            .contacto-left-icono {
+
+                                .icono-contacto {
+                                    font-size: 16px;
+                                }
+
+                                .icono-contacto-linkedin {
+                                    font-size: 16px;
+                                }
+                            }
+
+                            .contacto-left-texto {
+
+                                p,
+                                a {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .contacto-right {
+                        width: 50%;
+                        height: 10vh;
+                        justify-content: center;
+
+                        .contacto-right-fila {
+                            height: 3vh;
+
+                            .contacto-right-icono {
+
+                                .icono-contacto {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .contacto-right-texto {
+
+                                p,
+                                a {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .principal-presentacion {
+                    width: 90%;
+                    height: 26vh;
+                    margin-left: 5%;
+                    padding: 1vh 0 0 0;
+
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .columna-curriculum-principal-proyectos-formacion {
+                height: 90vh;
+
+                .principal-proyectos {
+                    width: 90%;
+                    height: 60vh;
+                    margin-left: 5%;
+
+                    .proyectos-titulo {
+                        height: 6vh;
+
+                        h2 {
+                            font-size: 34px;
+                        }
+                    }
+
+                    .proyectos-seccion {
+                        width: 100%;
+                        height: 16.666vh;
+
+                        .proyectos-seccion-titulo {
+                            height: 3.666vh;
+
+                            h3 {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .proyectos-seccion-texto {
+                            height: 10vh;
+
+                            p {
+                                font-size: 16px;
+                                text-align: justify;
+                                line-height: 1.2;
+                            }
+                        }
+
+                        .proyectos-seccion-link {
+                            height: 3vh;
+
+                            a {
+                                font-size: 16px;
+                                line-height: 1;
+                            }
+                        }
+
+                    }
+                }
+
+                .principal-formacion {
+                    width: 90%;
+                    height: 15vh;
+                    margin-left: 5%;
+
+                    .formacion-titulo {
+                        height: 6vh;
+
+                        h2 {
+                            font-size: 34px;
+                        }
+                    }
+
+                    .formacion-datos {
+                        width: 100%;
+                        height: 8vh;
+                        padding: 1vh;
+
+                        .formacion-datos-carrera {
+                            width: 100%;
+                            height: 8vh;
+
+                            h3 {
+                                font-size: 18px;
+                                text-align: center;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                text-align: justify;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                }
+
+                .principal-idiomas {
+                    width: 90%;
+                    height: 15vh;
+                    margin-left: 5%;
+
+                    .idiomas-titulo {
+                        height: 6vh;
+
+                        h2 {
+                            font-size: 34px;
+                        }
+                    }
+
+                    .idiomas-datos {
+                        height: 6vh;
+
+                        .idiomas-datos-izquierda {
+                            width: 20%;
+                            height: 6vh;
+
+                            p {
+                                font-size: 16px;
+                                text-align: center;
+                                line-height: 1.2;
+                            }
+                        }
+
+                        .idiomas-datos-derecha {
+                            p {
+                                font-size: 16px;
+                                text-align: justify;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .columna-curriculum-principal-skills {
+                height: 40vh;
+                display: flex;
+                flex-direction: row;
+                padding-top: 1vh;
+
+                .principal-hard-skills {
+                    width: 50%;
+                    height: 36vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    .hard-skills-titulo {
+                        width: 100%;
+                        height: 4vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(0, 83, 121, 1);
+
+                        h2 {
+                            font-size: 22px;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+
+                    .hard-skills-contenido {
+                        width: 100%;
+                        height: 32vh;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 1vh;
+
+                        .skills-contenido-fila {
+                            width: 100%;
+                            height: 2.5vh;
+                            display: flex;
+                            flex-direction: row;
+
+                            .skills-fila-icono {
+                                width: 30%;
+                                height: 2.5vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .habilidad-ico {
+                                    color: rgba(0, 83, 121, 1);
+                                    font-size: 22px;
+                                    text-align: justify;
+                                    line-height: 1;
+                                }
+
+                                .icono-ionic {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/ionic.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .icono-thymeleaf {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/thymeleaf.png');
+                                    background-size: 29%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .icono-java {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/java.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .icono-springboot {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/springboot.png');
+                                    background-size: 30%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .icono-firebase {
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/firebase.png');
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                            }
+
+                            .skills-fila-texto {
+                                width: 70%;
+                                height: 2.5vh;
+                                display: flex;
+                                align-items: center;
+
+                                p {
+                                    font-size: 14px;
+                                    text-align: justify;
+                                    line-height: 1.1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .principal-soft-skills {
+                    width: 50%;
+                    height: 29vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    .soft-skills-titulo {
+                        width: 100%;
+                        height: 4vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(0, 83, 121, 1);
+
+                        h2 {
+                            font-size: 22px;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+
+                    .soft-skills-texto {
+                        width: 100%;
+                        height: 23vh;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 2vh;
+                        padding: 0 1vh 0 1vh;
+
+                        .skills-texto {
+                            width: 100%;
+                            height: 2.5vh;
+
+                            p {
+                                font-size: 14px;
+                                text-align: justify;
+                                line-height: 1.1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
